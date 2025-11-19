@@ -11,6 +11,7 @@ Rails.application.routes.draw do
       get :chef
     end
   end
+  resources :reviews, only: [:destroy]
 
 
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
